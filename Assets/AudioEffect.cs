@@ -4,7 +4,7 @@ using System.Collections;
 public class AudioEffect : MonoBehaviour {
 
 	int detail = 1;
-	float amplitude = 1f;
+	float amplitude = 5f;
 	float startScale;
 	// Use this for initialization
 	void Start () {

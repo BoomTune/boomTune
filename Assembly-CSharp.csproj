@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E3066AB3-2210-9174-431F-24BD98A60D02}</ProjectGuid>
+    <ProjectGuid>{99025DAE-3BE3-4CCA-5821-110C4DBA02D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,14 +46,27 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AudioEffect.cs" />
+     <Compile Include="Assets\AudioMEffect.cs" />
      <Compile Include="Assets\CollisionController.cs" />
      <Compile Include="Assets\CubeController.cs" />
+     <Compile Include="Assets\Earth\Scripts\EarthScript.cs" />
+     <Compile Include="Assets\Earth\Scripts\MoveScript.cs" />
+     <Compile Include="Assets\Earth\Scripts\SphereScript.cs" />
      <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
      <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
      <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
      <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
      <Compile Include="Assets\NewPlayerController.cs" />
      <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\PyroParticles\Demo\DemoScript.cs" />
+     <Compile Include="Assets\PyroParticles\Demo\DemoScriptEditor.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireLightScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
      <Compile Include="Assets\RockColor.cs" />
      <Compile Include="Assets\SpawnManager.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
@@ -103,18 +116,28 @@
      <None Include="Assets\UnityTestTools\LICENSE.txt" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleAdditiveBlend.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\Additive.shader" />
+     <None Include="Assets\Earth\Readme.txt" />
      <None Include="Assets\Spaceship\readme.txt" />
+     <None Include="Assets\Earth\Materials\EarthShader.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\Fallback.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\Multiply.shader" />
+     <None Include="Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\CharacterSelfIlluminationReflective.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\PlanarRealtimeReflection.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\ReflectiveBackgroundPlanar.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\EnemySelfIlluminationReflective.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\AngryInclude.cginc" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleAdditive.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\PyroParticles\Readme.txt" />
      <None Include="Assets\UnityTestTools\changelog.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\LaserScope.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\SuperSimpleSelfIllumination.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleBlend.shader" />
      <None Include="Assets\Planets\shader\two_side_shader.shader" />
  <Reference Include="UnityEngine.Networking">
@@ -124,11 +147,15 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
- <HintPath>/Users/Osborne/audioDrive/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.dll</HintPath>
+ <HintPath>/Users/thadycondon/Desktop/boomTune/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil.Mdb">
- <HintPath>/Users/Osborne/audioDrive/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.Mdb.dll</HintPath>
+ <HintPath>/Users/thadycondon/Desktop/boomTune/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.Mdb.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{158F0DB7-1F5E-759E-73E2-DBB6A0DE495C}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
