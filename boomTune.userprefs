@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HorseCubeController.cs">
+    <Files>
+      <File FileName="Assets/HorseCollisionController.cs" Line="22" Column="1" />
+      <File FileName="Assets/HorseSpawnManager.cs" Line="26" Column="3" />
+      <File FileName="Assets/HorseAudioEffect.cs" Line="13" Column="2" />
+      <File FileName="Assets/HorsePlayerController.cs" Line="24" Column="4" />
+      <File FileName="Assets/HorseCubeController.cs" Line="7" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Yuri/Code/csharp/boomTune/Assets/UnityTestTools/Examples/UnitTestExamples/Editor/SampleTests.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

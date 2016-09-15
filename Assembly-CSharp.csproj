@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E3066AB3-2210-9174-431F-24BD98A60D02}</ProjectGuid>
+    <ProjectGuid>{99025DAE-3BE3-4CCA-5821-110C4DBA02D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,12 +45,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioEffect.cs" />
      <Compile Include="Assets\CollisionController.cs" />
      <Compile Include="Assets\CubeController.cs" />
-     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
-     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
-     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
-     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
+     <Compile Include="Assets\Game Jam Menu Template\Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\Game Jam Menu Template\Scripts\EventSystemChecker.cs" />
+     <Compile Include="Assets\Game Jam Menu Template\Scripts\Pause.cs" />
+     <Compile Include="Assets\Game Jam Menu Template\Scripts\PlayMusic.cs" />
+     <Compile Include="Assets\Game Jam Menu Template\Scripts\QuitApplication.cs" />
+     <Compile Include="Assets\Game Jam Menu Template\Scripts\SetAudioLevels.cs" />
+     <Compile Include="Assets\Game Jam Menu Template\Scripts\ShowPanels.cs" />
+     <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
+     <Compile Include="Assets\GrassRoadRace\Script\CameraMove.cs" />
+     <Compile Include="Assets\HorseAudioEffect.cs" />
+     <Compile Include="Assets\HorseCollisionController.cs" />
+     <Compile Include="Assets\HorseCubeController.cs" />
+     <Compile Include="Assets\HorsePlayerController.cs" />
+     <Compile Include="Assets\HorseSpawnManager.cs" />
      <Compile Include="Assets\NewPlayerController.cs" />
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\SpawnManager.cs" />
@@ -100,18 +111,24 @@
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\Cursor.shader" />
      <None Include="Assets\UnityTestTools\LICENSE.txt" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleAdditiveBlend.shader" />
+     <None Include="Assets\CactusPack\Shaders\VertexBlend.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\Additive.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\Fallback.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\Multiply.shader" />
+     <None Include="Assets\CactusPack\Readme.txt" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\CharacterSelfIlluminationReflective.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\PlanarRealtimeReflection.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\ReflectiveBackgroundPlanar.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\EnemySelfIlluminationReflective.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\AngryInclude.cginc" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleAdditive.shader" />
+     <None Include="Assets\Game Jam Menu Template\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\UnityTestTools\changelog.txt" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\LaserScope.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\SuperSimpleSelfIllumination.shader" />
+     <None Include="Assets\CactusPack\Shaders\Basic_Rimlight.shader" />
+     <None Include="Assets\Horse\SoftAlpha.shader" />
+     <None Include="Assets\Game Jam Menu Template\GameJamTemplateReadMe.txt" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleBlend.shader" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
@@ -120,11 +137,15 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
- <HintPath>/Users/Osborne/audioDrive/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.dll</HintPath>
+ <HintPath>/Users/Yuri/Code/csharp/boomTune/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil.Mdb">
- <HintPath>/Users/Osborne/audioDrive/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.Mdb.dll</HintPath>
+ <HintPath>/Users/Yuri/Code/csharp/boomTune/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.Mdb.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{E4DD83E8-9658-8739-64F0-25455E81879C}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
